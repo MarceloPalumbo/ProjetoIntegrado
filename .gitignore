@@ -1,1 +1,3 @@
 pass/
+lightning_logs/
+.gitignore
