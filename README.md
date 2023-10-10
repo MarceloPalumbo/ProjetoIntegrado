@@ -41,32 +41,27 @@ Nome do dataset: Informações consolidadas de Beneficiários
 Descrição: Informações consolidadas de beneficiários por competência, extraídas dos arquivos SIB.
 Link: https://dados.gov.br/dados/conjuntos-dados/informacoes-cosolidadas-de-benficiarios
 
-| Nome do Atributo | Descrição | Tipo |
+| **Nome do Atributo** | **Descrição** | **Tipo** |
 | --- | --- | --- |
 | ID_TEMPO_COMPETENCIA | Competência dos dados no formato AAAAMM | CHAR |
 | CD_OPERADORA | Código de registro da operadora de plano de saúde na ANS | CHAR |
-RAZAO_SOCIAL	Razão Social da Operadora	VARCHAR
-CNPJ	CNPJ da Operadora
-	NUMBER
-
-MODALIDADE_OPERADORA	Classificação das operadoras de planos privados de assistência à saúde de acordo com seu estatuto jurídico	VARCHAR
-
-SG_UF	Sigla da unidade da federação de residência do beneficiário	
-CHAR
-CD_MUNICIPIO	Código IBGE do munícipio de residência do beneficiário, sem o dígito verificador	NUMBER
-NM_MUNICIPIO	Nome do munícipio de residência do beneficiário	VARCHAR
-SEXO	Identificação do sexo do beneficiário	CHAR
-FAIXA_ETARIA	Faixa etária do beneficiário	VARCHAR
-FAIXA_ETARIA_REAJUSTE	Faixa etária do beneficiário utilizada para o reajuste do plano	VARCHAR
-CD_PLANO	Código do plano registrado ou cadastrado na ANS no qual o beneficiário possui vínculo	CHAR
-VIGENCIA_PLANO	Início da vigência do plano para comercialização	CHAR
-CONTRATACAO_PLANO	Tipo de contratação do plano do beneficiário	VARCHAR
-SEGMENTACAO_PLANO	Tipo de segmentação assistencial do plano do beneficiário	VARCHAR
-ABRANGENCIA_PLANO	Tipo de abrangência do plano do beneficiário	VARCHAR
-COBERTURA_ASSISTENCIAL
-_PLANO	Tipo de cobertura de plano do beneficiário	VARCHAR
-TIPO_VINCULO	Tipo de vínculo do beneficiário	VARCHAR
-QTD_BENEF_ATIVOS	Quantidade de beneficiários ativos na competência	NUMBER
-QTD_BENEF_ADERIDOS	Quantidade de beneficiários aderidos na competência	NUMBER
-QTD_BENEF_CANCELADOS	Quantidade de beneficiários aderidos na competência	NUMBER
+| RAZAO_SOCIAL | Razão Social da Operadora | VARCHAR |
+| CNPJ | CNPJ da Operadora | NUMBER |
+| MODALIDADE_OPERADORA | Classificação das operadoras de planos privados de assistência à saúde de acordo com seu estatuto jurídico | VARCHAR
+| SG_UF | Sigla da unidade da federação de residência do beneficiário | CHAR |
+| CD_MUNICIPIO | Código IBGE do munícipio de residência do beneficiário, sem o dígito verificador | NUMBER |
+| NM_MUNICIPIO | Nome do munícipio de residência do beneficiário | VARCHAR |
+| SEXO | Identificação do sexo do beneficiário | CHAR |
+| FAIXA_ETARIA | Faixa etária do beneficiário | VARCHAR|
+| FAIXA_ETARIA_REAJUSTE | Faixa etária do beneficiário utilizada para o reajuste do plano | VARCHAR |
+| CD_PLANO | Código do plano registrado ou cadastrado na ANS no qual o beneficiário possui vínculo | CHAR|
+| VIGENCIA_PLANO | Início da vigência do plano para comercialização | CHAR |
+| CONTRATACAO_PLANO | Tipo de contratação do plano do beneficiário | VARCHAR |
+| SEGMENTACAO_PLANO | Tipo de segmentação assistencial do plano do beneficiário | VARCHAR |
+| ABRANGENCIA_PLANO | Tipo de abrangência do plano do beneficiário | VARCHAR |
+| COBERTURA_ASSISTENCIAL _PLANO | Tipo de cobertura de plano do beneficiário | VARCHAR |
+| TIPO_VINCULO | Tipo de vínculo do beneficiário | VARCHAR |
+| QTD_BENEF_ATIVOS | Quantidade de beneficiários ativos na competência | NUMBER |
+| QTD_BENEF_ADERIDOS | Quantidade de beneficiários aderidos na competência | NUMBER |
+| QTD_BENEF_CANCELADOS | Quantidade de beneficiários aderidos na competência | NUMBER |
 
