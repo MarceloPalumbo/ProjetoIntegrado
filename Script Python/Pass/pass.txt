@@ -1,4 +1,0 @@
-localhost
-mydb
-marcelo.palumbo
-Alexandr3
