@@ -41,6 +41,18 @@ Figura 1 - Volumetria da base de dados.
 
 A Extração dos dados ocorreu no dia 15/05/2023.<br><br>
 
+
+Os dados utilizados neste estudo serão coletados do portal Dados Abertos do Governo Federal, especificamente do conjunto de dados intitulado "Informações Consolidadas de Beneficiários". Os dados podem ser acessados por meio do seguinte link: https://dados.gov.br/dados/conjuntos-dados/informacoes-consolidadas-de-beneficiarios. Esses dados estão organizados por Ano/Mês e estão divididos em 28 arquivos distintos. Cada arquivo representa um estado brasileiro, além de um arquivo adicional chamado "XX", que contém os registros de cadastro nos quais o estado de residência do beneficiário não foi identificado.
+
+\begin{center}
+    Figura 1 - Volumetria da base de dados.
+    
+    \includegraphics[width=0.8\textwidth]{image/Volumetria_BeneficiariosConsolidadosANS.png}
+\end{center}
+
+A Extração dos dados ocorreu no dia 15/05/2023.
+
+
 **Nome do dataset:** Informações consolidadas de Beneficiários <br>
 **Descrição:** Informações consolidadas de beneficiários por competência, extraídas dos arquivos SIB.<br>
 Link: https://dados.gov.br/dados/conjuntos-dados/informacoes-cosolidadas-de-benficiarios <br>
