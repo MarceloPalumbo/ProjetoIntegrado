@@ -25,3 +25,46 @@ O algoritmo SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXog
 O XGBoost (Extreme Gradient Boosting) é um algoritmo de aprendizado de máquina baseado em árvores de decisão, conhecido por sua eficiência e precisão. Ele utiliza o método de boosting para criar um modelo preditivo poderoso, que combina várias árvores de decisão fracas para formar um modelo mais robusto e geralmente mais preciso. O XGBoost é amplamente aplicado em problemas de regressão e classificação, e sua capacidade de lidar com grandes conjuntos de dados e variáveis complexas o torna uma escolha popular para análise de séries temporais.<br>
 As Redes Neurais Tradicionais, também conhecidas como Multilayer Perceptrons (MLP), são um tipo de modelo de aprendizado de máquina inspirado no funcionamento do cérebro humano. Elas consistem em várias camadas de neurônios artificiais, cada um dos quais recebe entradas, processa-as e transmite os resultados para a próxima camada. As MLPs são capazes de aprender relações complexas entre as variáveis de entrada e saída, tornando-as adequadas para a análise de séries temporais, onde podem identificar padrões e tendências não lineares.<br>
 Ao usar esses três algoritmos distintos, SARIMAX, XGBoost e Redes Neurais Tradicionais (MLP), este estudo se beneficiará de abordagens variadas e complementares. O SARIMAX explorará a estrutura temporal e sazonal dos dados, o XGBoost aproveitará as vantagens do boosting e das árvores de decisão, enquanto as Redes Neurais Tradicionais (MLP) utilizarão sua capacidade de aprender representações complexas. Essa combinação de algoritmos permitirá uma análise abrangente e robusta das séries temporais relacionadas ao SIB, fornecendo insights valiosos para a gestão da saúde suplementar.
+
+
+### Coleta de Dados
+Os dados utilizados neste estudo serão coletados do portal Dados Abertos do Governo Federal, especificamente do conjunto de dados intitulado "Informações Consolidadas de Beneficiários". Os dados podem ser acessados por meio do seguinte link: https://dados.gov.br/dados/conjuntos-dados/informacoes-consolidadas-de-beneficiarios.<br>
+Esses dados estão organizados por Ano/Mês e estão divididos em 28 arquivos distintos. Cada arquivo representa um estado brasileiro, além de um arquivo adicional chamado "XX", que contém os registros de cadastro nos quais o estado de residência do beneficiário não foi identificado.<br><br>
+
+
+
+A Extração dos dados ocorreu no dia 15/05/2023.<br><br>
+
+Nome do dataset: Informações consolidadas de Beneficiários
+Descrição: Informações consolidadas de beneficiários por competência, extraídas dos arquivos SIB.
+Link: https://dados.gov.br/dados/conjuntos-dados/informacoes-cosolidadas-de-benficiarios
+
+| Nome do Atributo | Descrição | Tipo |
+| --- | --- | --- |
+| ID_TEMPO_COMPETENCIA | Competência dos dados no formato AAAAMM | CHAR |
+| CD_OPERADORA | Código de registro da operadora de plano de saúde na ANS | CHAR |
+RAZAO_SOCIAL	Razão Social da Operadora	VARCHAR
+CNPJ	CNPJ da Operadora
+	NUMBER
+
+MODALIDADE_OPERADORA	Classificação das operadoras de planos privados de assistência à saúde de acordo com seu estatuto jurídico	VARCHAR
+
+SG_UF	Sigla da unidade da federação de residência do beneficiário	
+CHAR
+CD_MUNICIPIO	Código IBGE do munícipio de residência do beneficiário, sem o dígito verificador	NUMBER
+NM_MUNICIPIO	Nome do munícipio de residência do beneficiário	VARCHAR
+SEXO	Identificação do sexo do beneficiário	CHAR
+FAIXA_ETARIA	Faixa etária do beneficiário	VARCHAR
+FAIXA_ETARIA_REAJUSTE	Faixa etária do beneficiário utilizada para o reajuste do plano	VARCHAR
+CD_PLANO	Código do plano registrado ou cadastrado na ANS no qual o beneficiário possui vínculo	CHAR
+VIGENCIA_PLANO	Início da vigência do plano para comercialização	CHAR
+CONTRATACAO_PLANO	Tipo de contratação do plano do beneficiário	VARCHAR
+SEGMENTACAO_PLANO	Tipo de segmentação assistencial do plano do beneficiário	VARCHAR
+ABRANGENCIA_PLANO	Tipo de abrangência do plano do beneficiário	VARCHAR
+COBERTURA_ASSISTENCIAL
+_PLANO	Tipo de cobertura de plano do beneficiário	VARCHAR
+TIPO_VINCULO	Tipo de vínculo do beneficiário	VARCHAR
+QTD_BENEF_ATIVOS	Quantidade de beneficiários ativos na competência	NUMBER
+QTD_BENEF_ADERIDOS	Quantidade de beneficiários aderidos na competência	NUMBER
+QTD_BENEF_CANCELADOS	Quantidade de beneficiários aderidos na competência	NUMBER
+
