@@ -3,7 +3,7 @@ Diretório destinado ao projeto integrado do MBA Inteligência Artificial e Apre
 
 
 ## Uso de Séries Temporais para Análise Beneficiários Ativos da Saúde Suplementar
-[projeto](Script Python/Projeto.ipynb)
+[PROJETO](https://github.com/MarceloPalumbo/ProjetoIntegrado/blob/master/Script%20Python/Projeto.ipynb)
 
 ### Introdução
 
